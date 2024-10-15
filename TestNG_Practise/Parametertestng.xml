@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test name="ParameterisedTest">
+  <parameter name="browser" value="Firefox">
+  </parameter>
+  <classes>
+  <class name="Parallel_Testing.ParameterTest">
+  </class>
+  </classes>
+  </test> <!-- ParameterisedTest -->
+  <test name="ParameterisedTest1">
+  <parameter name="browser" value="Chrome">
+  </parameter>
+  <classes>
+  <class name="Parallel_Testing.ParameterTest">
+  </class>
+  </classes>
+  </test> <!-- ParameterisedTest -->
+  
+</suite> <!-- Suite -->

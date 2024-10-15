@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="ParallelTesting" parallel="tests">
+  <test name="ParallelTest">
+  <parameter name="browser" value="FFX">
+  </parameter>
+    <classes>
+      <class name="Parallel_Testing.ParallelTest"/>
+    </classes>
+  </test> <!-- ParallelTest -->
+  <test name="ParallelTest_chrome">
+  <parameter name="browser" value="CRM">
+  </parameter>
+    <classes>
+      <class name="Parallel_Testing.ParallelTest"/>
+    </classes>
+  </test> <!-- ParallelTest -->
+  <test name="ParallelTest_Edge">
+  <parameter name="browser" value="Edge">
+  </parameter>
+    <classes>
+      <class name="Parallel_Testing.ParallelTest"/>
+    </classes>
+  </test> <!-- ParallelTest -->
+  
+  
+</suite> <!-- Suite -->
